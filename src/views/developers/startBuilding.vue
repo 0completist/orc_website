@@ -3,7 +3,7 @@
 
         <div class="oris flex justify-between my-32">
             <div class="content">
-                <h1 class="text-4xl mb-5">ORIS Chain <span class="text-[#1058DE]">Developers</span></h1>
+                <h1 class="text-4xl mb-5 max-size">ORIS Chain <span class="text-[#1058DE]">Developers</span></h1>
                 <p class="text-xl text-[#3E3E3E] max-w-[570px]">Build cutting-edge Web3 applications on the Blockchain with
                     the largest
                     user base.</p>
@@ -12,7 +12,7 @@
                     <el-button size="large" style="color: black;">Get Support</el-button>
                 </el-space>
             </div>
-            <img class="max-w-[495px]  big-img" src="@/assets/web/developers.png" alt="">
+            <img class="max-w-[495px] big-img" src="@/assets/web/developers.png" alt="" width="100%">
         </div>
 
         <div>
@@ -22,45 +22,49 @@
                     for<br />
                     developers joining the BNB Chain community.</p>
             </div>
-            <el-row :gutter="24" class="mt-[30px]">
-                <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12" v-for="(item, index) in typeList" :key="index"
-                    @click="curr = index">
-                    <div class="column p-5 pr-10 cursor-pointer" :class="{ active: index == curr }">
-                        <img class="w-[40px]" :src="item.icon" />
-                        <p class="text-xl my-3 text-[#3E3E3E]">{{ item.title }}</p>
-                        <p class="text-sm text-[#777777]">{{ item.content }}</p>
-                        <el-space v-if="index == 4" :size="15" class="mt-3">
-                            <img class="w-[20px]" src="@/assets/web/telegram.png" />
-                            <img class="w-[20px]" src="@/assets/web/youxiang-2.png" />
-                        </el-space>
-                    </div>
-                </el-col>
-            </el-row>
+            <div class="row-box">
+                <el-row :gutter="24" class="mt-[30px]">
+                    <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12" v-for="(item, index) in typeList" :key="index"
+                        @click="changeCurr(index, item)">
+                        <div class="column p-5 pr-10 cursor-pointer" :class="{ active: index == curr }">
+                            <img class="w-[40px]" :src="item.icon" />
+                            <p class="text-xl my-3 text-[#3E3E3E]">{{ item.title }}</p>
+                            <p class="text-sm text-[#777777]">{{ item.content }}</p>
+                            <el-space v-if="index == 4" :size="15" class="mt-3">
+                                <img class="w-[20px]" src="@/assets/web/telegram.png" />
+                                <img class="w-[20px]" src="@/assets/web/youxiang-2.png" />
+                            </el-space>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
         </div>
 
         <div>
             <div class="text-center mt-8">
                 <h1 class="text-4xl">Developer <span class="text-[#1058DE]">Tools</span></h1>
             </div>
-            <el-row :gutter="24" class="my-14">
-                <el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6" v-for="(item, index) in toolList" :key="index">
-                    <div class="column p-5 cursor-pointer" :class="{ active: index == act[0] }">
-                        <img class="w-7" :src="item.icon" />
-                        <p class="text-xl my-3 text-[#3E3E3E]">{{ item.title }}</p>
-                        <div class="flex justify-between items-center mb-2" :class="{ act: act == ('' + index + key) }"
-                            v-for="(val, key) in item.list" :key="key" @click="act = ('' + index + key)">
-                            <p class="text-sm ">{{ val.name }}</p>
-                            <img class="w-2.5 h-2.5" src="@/assets/web/jiantou_blue.png"
-                                v-show="act == ('' + index + key)" />
-                            <img class="w-2.5 h-2.5" src="@/assets/web/jiantou_black.png"
-                                v-show="act != ('' + index + key)" />
+            <div class="row-box">
+                <el-row :gutter="24" class="my-14">
+                    <el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6" v-for="(item, index) in toolList" :key="index">
+                        <div class="column p-5 cursor-pointer" :class="{ active: index == act[0] }">
+                            <img class="w-7" :src="item.icon" />
+                            <p class="text-xl my-3 text-[#3E3E3E]">{{ item.title }}</p>
+                            <div class="flex justify-between items-center mb-2" :class="{ act: act == ('' + index + key) }"
+                                v-for="(val, key) in item.list" :key="key" @click="changeAct(index, key, val)">
+                                <p class="text-sm ">{{ val.name }}</p>
+                                <img class="w-2.5 h-2.5" src="@/assets/web/jiantou_blue.png"
+                                    v-show="act == ('' + index + key)" />
+                                <img class="w-2.5 h-2.5" src="@/assets/web/jiantou_black.png"
+                                    v-show="act != ('' + index + key)" />
+                            </div>
                         </div>
-                    </div>
-                </el-col>
-            </el-row>
+                    </el-col>
+                </el-row>
+            </div>
         </div>
 
-        <div class="events flex px-10 py-14">
+        <div class="events flex px-10 py-14" @click="$router.push('/event')">
             <div class="my-auto max-w-[420px]">
                 <h1 class="text-2xl mb-5">Developer <span class="text-[#1058DE]">Events</span></h1>
                 <p class="text-sm text-[#777]">ORIS Chain is hosting events with community partners globally
@@ -68,7 +72,7 @@
             </div>
         </div>
 
-        <div>
+        <div class="px-3.5">
             <el-row :gutter="24" class="mt-[20px]">
                 <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12">
                     <div class="bounty cursor-pointer px-10 py-14">
@@ -90,17 +94,19 @@
             <div class="text-center mt-8">
                 <h1 class="text-4xl">Join the <span class="text-[#1058DE]">Community</span></h1>
             </div>
-            <el-row :gutter="24" class="my-14">
-                <el-col class="community-col" :xs="12" :sm="4" :md="4" :lg="4" :xl="4"
-                    v-for="(item, index) in  communityList " :key="index" :offset="index == 0 ? 4 : 0"
-                    @mouseenter="curInd = index">
-                    <div class="communityItem flex justify-center items-center flex-col	 cursor-pointer"
-                        :class="{ curAct: curInd == index }">
-                        <img class="w-3.5" :src="curInd == index ? item.selIcon : item.icon" />
-                        <p>Facebook</p>
-                    </div>
-                </el-col>
-            </el-row>
+            <div class="row-box">
+                <el-row :gutter="24" class="my-14">
+                    <el-col class="community-col" :xs="12" :sm="4" :md="4" :lg="4" :xl="4"
+                        v-for="(item, index) in  communityList " :key="index" :offset="index == 0 ? 4 : 0"
+                        @mouseenter="curInd = index">
+                        <div class="communityItem flex justify-center items-center flex-col	 cursor-pointer"
+                            :class="{ curAct: curInd == index }">
+                            <img class="w-3.5" :src="curInd == index ? item.selIcon : item.icon" />
+                            <p>Facebook</p>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
         </div>
 
     </div>
@@ -125,12 +131,14 @@ export default {
                 {
                     icon: "/src/assets/ios/ditu.png",
                     title: "Roadmap",
-                    content: "Find out more about where ORIS Chain is headed and how your project can grow with it."
+                    content: "Find out more about where ORIS Chain is headed and how your project can grow with it.",
+                    link: "/map"
                 },
                 {
                     icon: "/src/assets/ios/xianlu@2x.png",
                     title: "Developer Path",
-                    content: "Master ORIS Chain development with our engaging, step-by-step visual guide – fast-track your blockchain journey today."
+                    content: "Master ORIS Chain development with our engaging, step-by-step visual guide – fast-track your blockchain journey today.",
+                    link: "/path"
                 },
                 {
                     icon: "/src/assets/ios/keaide@2x.png",
@@ -160,7 +168,7 @@ export default {
                     icon: "/src/assets/web/shuilongtou@2x.png",
                     title: "Faucet",
                     list: [
-                        { name: 'ORIS Testnet Faucet' }
+                        { name: 'ORIS Testnet Faucet', link: '/aucet' }
                     ]
                 },
                 {
@@ -195,6 +203,20 @@ export default {
                     name: "Facebook"
                 }
             ]
+        }
+    },
+    methods: {
+        changeCurr(index, item) {
+            this.curr = index;
+            if (item.link) {
+                this.$router.push(item.link)
+            }
+        },
+        changeAct(index, key, item) {
+            this.act = ('' + index + key);
+            if (item.link) {
+                this.$router.push(item.link)
+            }
         }
     }
 }

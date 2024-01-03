@@ -50,38 +50,203 @@
   }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
-  font-weight: normal;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  transition:
-    color 0.5s,
-    background-color 0.5s;
-  line-height: 1.6;
+  line-height: 1;
   font-family: HiraginoSansGB-W6;
-  /* font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
-    sans-serif; */
   font-size: 12px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+自定义样式
+*/
+
+/* 响应式样式 */
+@media (max-width: 768px) {
+  .row-box {
+    padding: 0 20px;
+  }
+
+  .max-size {
+    font-size: 30px !important;
+  }
+}
+
+/*
+  自定义 字体大小
+*/
+.s-12-7 {
+  color: #777777;
+  font-size: 12px;
+}
+
+.s-14 {
+  color: #010105;
+  font-size: 14px;
+}
+
+.s-16-7 {
+  color: #777777;
+  font-size: 16px;
+}
+
+.s-16 {
+  color: #3E3E3E;
+  font-size: 16px;
+}
+
+.s-18 {
+  color: #010105;
+  font-size: 18px;
+}
+
+.s-26 {
+  color: #3E3E3E;
+  font-size: 26px;
+}
+
+.s-30 {
+  color: #010105;
+  font-size: 30px;
+}
+
+.s-30-7 {
+  color: #777777;
+  font-size: 30px;
+}
+
+.s-30-3e {
+  color: #3E3E3E;
+  font-size: 30px;
+}
+
+.s-41 {
+  color: #010105;
+  font-size: 41px;
 }

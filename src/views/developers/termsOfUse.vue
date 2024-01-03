@@ -1,6 +1,6 @@
 <template>
     <div class="container mx-auto mt-20">
-        <h1 class="text-[41px] text-[#010105]">Website Terms of Use</h1>
+        <h1 class="text-[41px] text-[#010105] max-size">Website Terms of Use</h1>
         <p class="text-base text-[#777]">Last Updated: February 2023</p>
         <div class="tips">
             BY ACCESSING, BROWSING OR USING BNBCHAIN.ORG, YOU ACKNOWLEDGE THAT YOU HAVE READ, UNDERSTAND AND AGREE TO BE

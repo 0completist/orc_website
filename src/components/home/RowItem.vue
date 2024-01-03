@@ -1,19 +1,17 @@
 <template>
     <div class="item" :class="item.position == 'right' ? 'flex-row-reverse' : ''">
-        <img :src="imgList[index]" class="md:w-[305px] sm:w-full" />
-
-        <!-- <el-image class="md:w-[305px] sm:w-full" :src="imgList[index]" fit="cover" /> -->
-        <div class="w-1/3">
-            <h3 class="text-2xl text-black mb-3">{{ item.title }}</h3>
-            <p>{{ item.content }}</p>
-            <el-button type="primary" size="large" class="mt-3">{{ item.text }}</el-button>
+        <img :class="`img-${index}`" :src="imgList[index]" width="100%" />
+        <div class="content">
+            <h3 class="text-[26px] mb-8">{{ item.title }}</h3>
+            <p class="text-lg">{{ item.content }}</p>
+            <el-button type="primary" size="large" class="mt-[22px]" @click="$router.push(item.url)">{{ item.text }}</el-button>
         </div>
     </div>
 </template>
   
 <script>
 export default {
-    name: 'TextColumns',
+    name: 'RowItem',
     props: {
         item: {
             type: Object,
@@ -27,25 +25,53 @@ export default {
     data() {
         return {
             imgList: [
-                "src/assets/web/origins.png",
-                "src/assets/web/defi.png",
-                "src/assets/web/99.png"
+                "src/assets/ios/origins@3x.png",
+                "src/assets/ios/defi@3x.png",
+                "src/assets/ios/99@3x.png"
             ]
         }
     }
 };
 </script>
   
-<style  scoped>
+<style lang="scss"  scoped>
 .item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .img-0 {
+        width: 615px;
+        height: 615px;
+        margin: 0 144px 0 -104px;
+    }
+
+    .img-1 {
+        width: 543px;
+        height: 727px;
+        margin: 0 -76px 0 188px;
+    }
+
+    .img-2 {
+        width: 718px;
+        height: 718px;
+        margin-left: -104px;
+        margin: 0 144px 0 -104px;
+    }
+
 }
 
 @media (max-width: 991px) {
     .item {
         flex-direction: column;
+
+        .img-0,
+        .img-1,
+        .img-2 {
+            width: 100%;
+            height: 100%;
+            margin: 20px 0;
+        }
     }
 }
 </style>

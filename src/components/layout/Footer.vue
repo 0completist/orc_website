@@ -13,10 +13,10 @@
                 <div class="footer-column">
                     <div>
                         <h3 class="title">About</h3>
-                        <p>Privacy Policy</p>
-                        <p>Terms of Use</p>
-                        <p>Careers</p>
-                        <p>Verification</p>
+                        <p class="mb-8" @click="$router.push('/privacy/policy')">Privacy Policy</p>
+                        <p class="mb-8" @click="$router.push('/terms/use')">Terms of Use</p>
+                        <p class="mb-8">Careers</p>
+                        <p class="mb-8">Verification</p>
                     </div>
                 </div>
             </el-col>
@@ -24,20 +24,20 @@
                 <div class="footer-column">
                     <div>
                         <h3 class="title">Community</h3>
-                        <div class="flex items-center">
-                            <img src="@/assets/web/f1.png" alt="" class="w-4 mr-3">
+                        <div class="flex items-center mb-[18px]">
+                            <img src="@/assets/web/f1.png" alt="" width="30px" class="mr-5">
                             <p>Facebook</p>
                         </div>
-                        <div class="flex items-center">
-                            <img src="@/assets/web/f2.png" alt="" class="w-4 mr-3">
+                        <div class="flex items-center mb-[18px]">
+                            <img src="@/assets/web/f2.png" alt="" width="30px" class="mr-5">
                             <p>Facebook</p>
                         </div>
-                        <div class="flex items-center">
-                            <img src="@/assets/web/f3.png" alt="" class="w-4 mr-3">
+                        <div class="flex items-center mb-[18px]">
+                            <img src="@/assets/web/f3.png" alt="" width="30px" class="mr-5">
                             <p>Facebook</p>
                         </div>
-                        <div class="flex items-center">
-                            <img src="@/assets/web/f4.png" alt="" class="w-4 mr-3">
+                        <div class="flex items-center mb-[18px]">
+                            <img src="@/assets/web/f4.png" alt="" width="30px" class="mr-5">
                             <p>Facebook</p>
                         </div>
                     </div>
@@ -49,9 +49,9 @@
 
 <style lang="scss" scoped>
 .footer-container {
+    padding-top: 64px;
+	padding-bottom: 170px;
     background-color: #000;
-    padding: 24px 0;
-    font-size: 10px;
 }
 
 .footer-column {
@@ -65,7 +65,7 @@
 
     .title {
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 53px;
     }
 }
 

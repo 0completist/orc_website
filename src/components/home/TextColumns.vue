@@ -1,13 +1,13 @@
 <template>
-    <div class="text-columns-container">
-        <el-row>
+    <div class="text-columns-container row-box">
+        <el-row :gutter="24">
             <el-col :xs="24" :sm="6" :md="6" :lg="6" :xl="6" v-for="(item, index) in list" :key="index">
                 <div class="text-column">
                     <p class="mb-2">{{ item.date }}</p>
                     <p class="text-[18px] text-black leading-5 font-medium mb-4">{{ item.title }}</p>
                     <p class="leading-4 mb-7">{{ item.content }}</p>
                     <p class="flex items-center text-black font-medium">
-                        <span class="mr-1">READ MORE</span>
+                        <span class="mr-1" @click="$router.push('/learnMore')">READ MORE</span>
                         <el-icon>
                             <ArrowRightBold />
                         </el-icon>

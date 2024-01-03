@@ -3,7 +3,7 @@
 
         <div class="oris flex justify-between my-32">
             <div class="content">
-                <h1 class="text-4xl mb-5">
+                <h1 class="text-4xl mb-5 mt-5">
                     ORIS Chain
                     <p class="text-[#1058DE] mt-1.5">Community Hub</p>
                 </h1>
@@ -12,7 +12,7 @@
                     Welcome to join our vibrant community today.
                 </p>
             </div>
-            <img class="max-w-[264px] big-img" src="@/assets/web/join.png" alt="">
+            <img class="big-img" src="@/assets/web/join.png" alt="" width="100%">
         </div>
 
         <div>
@@ -23,26 +23,28 @@
                     passionate advocates here.
                 </p>
             </div>
-            <div class="text-center mt-6 twoBtn">
+            <div class="text-center mt-6 twoBtn px-5">
                 <el-space :size="60">
                     <p class="act">Global Community</p>
                     <p>Local Telegram</p>
                 </el-space>
             </div>
-            <el-row :gutter="24" class="mt-[74px]">
-                <el-col :xs="12" :sm="12" :md="8" :lg="8" :xl="8" v-for="(item, index) in typeList" :key="index"
-                    @mouseenter="curr = index">
-                    <div class="column px-5 py-[60px] cursor-pointer" :class="{ active: index == curr }">
-                        <img class="w-[40px] mx-auto" :src="index == curr ? item.selIcon : item.icon" />
-                        <p class="text-lg mb-6 mt-10 text-[#010105]">{{ item.title }}</p>
-                        <div class="text-sm text-[#777777] flex justify-center items-center">
-                            <img :src="index > 2 ? '/src/assets/ios/daima-2@2x.png' : '/src/assets/ios/zizhutuiguang@2x.png'"
-                                class="w-4 h-4 mr-2" />
-                            <p>{{ item.content }}</p>
+            <div class="row-box mt-[74px]">
+                <el-row :gutter="24">
+                    <el-col :xs="12" :sm="12" :md="8" :lg="8" :xl="8" v-for="(item, index) in typeList" :key="index"
+                        @mouseenter="curr = index">
+                        <div class="column px-5 py-[60px] cursor-pointer" :class="{ active: index == curr }">
+                            <img class="w-[40px] mx-auto" :src="index == curr ? item.selIcon : item.icon" />
+                            <p class="text-lg mb-6 mt-10 text-[#010105]">{{ item.title }}</p>
+                            <div class="text-sm text-[#777777] flex justify-center items-center">
+                                <img :src="index > 2 ? '/src/assets/ios/daima-2@2x.png' : '/src/assets/ios/zizhutuiguang@2x.png'"
+                                    class="w-4 h-4 mr-2" />
+                                <p>{{ item.content }}</p>
+                            </div>
                         </div>
-                    </div>
-                </el-col>
-            </el-row>
+                    </el-col>
+                </el-row>
+            </div>
         </div>
 
         <div class="events flex px-10 py-14">
@@ -57,21 +59,23 @@
 
         <div>
             <div class="text-center mt-8">
-                <h1 class="text-4xl">What's <span class="text-[#1058DE]">NEW</span> at ORIS Chain</h1>
+                <h1 class="text-4xl max-size">What's <span class="text-[#1058DE]">NEW</span> at ORIS Chain</h1>
             </div>
-            <el-row :gutter="24" class="my-14">
-                <el-col :xs="24" :sm="12" :md="8" :lg="8" :xl="8" v-for="item in  3 " :key="item" class="sm:mb-5 xs:mb-5">
-                    <div class="newItem">
-                        <div class="img"></div>
-                        <p class="text-xl text-[#010105]">
-                            How ORIS Chain Pioneered the
-                            Future of Web3 In 2023
-                        </p>
-                        <p class="line"></p>
-                        <p class="text-sm text-[#777]">Dec 20 <span class="spot"></span> 6 min read</p>
-                    </div>
-                </el-col>
-            </el-row>
+            <div class="row-box my-14">
+                <el-row :gutter="24">
+                    <el-col :xs="24" :sm="12" :md="8" :lg="8" :xl="8" v-for="item in  3 " :key="item" class="mb-5">
+                        <div class="newItem">
+                            <div class="img"></div>
+                            <p class="text-xl text-[#010105]">
+                                How ORIS Chain Pioneered the
+                                Future of Web3 In 2023
+                            </p>
+                            <p class="line"></p>
+                            <p class="text-sm text-[#777]">Dec 20 <span class="spot"></span> 6 min read</p>
+                        </div>
+                    </el-col>
+                </el-row>
+            </div>
         </div>
 
         <div class="text-center">
@@ -198,6 +202,8 @@ export default {
 
 @media (min-width: 768px) {
     .big-img {
+        width: 527px;
+        height: 438px;
         margin-right: -50px;
     }
 }
