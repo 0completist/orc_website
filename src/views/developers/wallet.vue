@@ -2,8 +2,8 @@
     <div class="container mx-auto">
 
         <div class="flex items-center mt-24 mb-6 flex-row wallet">
-            <el-space direction="vertical" alignment="start" class="w-1/2 pr-[50px] left">
-                <el-button type="primary" size="large">ORIS Chain Wallets</el-button>
+            <el-space direction="vertical" alignment="start" class="pr-[50px] left space-margin">
+                <el-button type="primary" size="large">ORis Chain Wallets</el-button>
                 <h1 class="my-5 text-[40px] text-[#010105]">Navigate Your Way Through Web3</h1>
                 <p class="text-xl text-[#777]">
                     Wallets help you access your funds, and interact
@@ -11,9 +11,7 @@
                     Your Wallet is your Access.
                 </p>
             </el-space>
-            <div class="w-1/2 big_img">
-                <img src="@/assets/ios/wallet@3x.png" alt="" width="80%" class="mx-auto">
-            </div>
+            <img class="big_img" src="@/assets/ios/wallet@3x.png" alt="" width="100%">
         </div>
 
         <div class="list my-10 row-box">
@@ -183,7 +181,7 @@ let list = [
 
         .left {
             padding: 0;
-            width: 100%;
+            margin-top: 40px;
         }
 
         .big_img {
@@ -193,6 +191,11 @@ let list = [
 }
 
 @media (min-width: 768px) {
+    .big_img {
+        width: 410px;
+        height: 376px;
+    }
+
     .list {
         margin: 100px 0;
     }

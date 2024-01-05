@@ -1,7 +1,7 @@
 <template>
     <div class="item" :class="item.position == 'right' ? 'flex-row-reverse' : ''">
         <img :class="`img-${index}`" :src="imgList[index]" width="100%" />
-        <div class="content">
+        <div class="content md:px-5 space-margin">
             <h3 class="text-[26px] mb-8">{{ item.title }}</h3>
             <p class="text-lg">{{ item.content }}</p>
             <el-button type="primary" size="large" class="mt-[22px]" @click="$router.push(item.url)">{{ item.text }}</el-button>

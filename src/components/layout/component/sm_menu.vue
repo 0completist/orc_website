@@ -8,37 +8,25 @@
   --el-menu-hover-bg-color: #00205C;
 }
 
-.smDevelopers {
-}
+.smDevelopers {}
 
-.smDevelopers-item {
-}
+.smDevelopers-item {}
 </style>
 
 <template>
-  <el-drawer
-      v-model="drawer"
-      title="ORis Smart Chain"
-      size="90%"
-      :z-index="9999"
-      class="bg-gradient-to-r from-primary to-primaryG"
-      :direction="direction"
-      :before-close="handleClose"
-  >
-    <el-menu :popper-offset="30"
-             class="smMenuContent"
-             :default-active="activeIndex"
-             :ellipsis="false"
-             @select="handleSelect">
+  <el-drawer v-model="drawer" title="ORis Smart Chain" size="90%" :z-index="9999"
+    class="bg-gradient-to-r from-primary to-primaryG" :direction="direction" :before-close="handleClose">
+    <el-menu :popper-offset="30" class="smMenuContent" :default-active="activeIndex" :ellipsis="false"
+      @select="handleSelect">
       <!--dropdown-->
       <el-sub-menu index="1" popper-class="smDevelopers">
         <template #title>Chains</template>
         <el-sub-menu index="1-1" popper-class="smDevelopers-item">
           <template #title>
-            ORIS Smart Chain
+            ORis Smart Chain
           </template>
           <el-menu-item index="1-1-1">
-            ORIS Smart Chain
+            ORis Smart Chain
           </el-menu-item>
           <el-menu-item index="1-1-2">
             Documentation
@@ -53,12 +41,12 @@
             BscScan
           </el-menu-item>
           <el-menu-item index="1-1-6">
-            Add ORIS Smart Chain Network
+            Add ORis Smart Chain Network
           </el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="1-2" popper-class="smDevelopers-item">
           <template #title>
-            ORIS Beacon Chain
+            ORis Beacon Chain
           </template>
           <!-- <el-menu-item index="1-2-1">
             item one
@@ -70,7 +58,7 @@
       <el-sub-menu index="2" popper-class="smDevelopers">
         <template #title>Developers</template>
         <el-menu-item index="2-1">
-          ORIS Smart Chain
+          ORis Smart Chain
         </el-menu-item>
         <el-menu-item index="2-2">
           Documentation
@@ -85,7 +73,7 @@
       <el-sub-menu index="3" popper-class="smDevelopers">
         <template #title>Ecosystemrtners</template>
         <el-menu-item index="3-1">wallet</el-menu-item>
-       <!-- <el-menu-item index="3-2">item two</el-menu-item>
+        <!-- <el-menu-item index="3-2">item two</el-menu-item>
         <el-menu-item index="3-3">item three</el-menu-item>
         <el-sub-menu index="3-4" popper-class="smsmDevelopers-item">
           <template #title>item four</template>
@@ -111,7 +99,7 @@
 </template>
 
 <script setup>
-const router=useRouter()
+const router = useRouter()
 const drawer = ref(false)
 const direction = ref('rtl')
 const handleOPen = () => {
@@ -124,17 +112,23 @@ const handleClose = (done) => {
 const activeIndex = ref('1')
 const handleSelect = (key, keyPath) => {
   console.log(key, keyPath)
-  drawer.value=false;
-  switch(key){
-	  case "2-1":
-	    router.push('/start/building');
-	    break;
-	  case "3-1":
-	    router.push('/wallet');
-	    break;
-	  case "4-1":
-	    router.push('/join');
-	    break;
+  drawer.value = false;
+  switch (key) {
+    case "1-1-4":
+      router.push('/aucet');
+      break;
+    case "2-1":
+      router.push('/start/building');
+      break;
+    case "2-4":
+      router.push('/aucet');
+      break;
+    case "3-1":
+      router.push('/wallet');
+      break;
+    case "4-1":
+      router.push('/join');
+      break;
   }
 }
 

@@ -1,9 +1,9 @@
 <template>
     <div class="page">
         <div class="container mx-auto">
-            <div class="text-center">
-                <h1 class="pt-[108px] text-4xl text-[#010105]">ORIS Chain Developer Path</h1>
-                <p class="my-10 text-base text-[#777]">A visual step by step guide to become a ORIS Chain developer</p>
+            <div class="text-center space-margin">
+                <h1 class="pt-[108px] text-4xl text-[#010105]">ORis Chain Developer Path</h1>
+                <p class="my-10 text-base text-[#777]">A visual step by step guide to become a ORis Chain developer</p>
                 <div class="btn">
                     <el-icon>
                         <Download />

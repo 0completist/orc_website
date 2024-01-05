@@ -2,6 +2,24 @@
 import sm_menu from './component/sm_menu.vue'
 const router = useRouter();
 
+const isFixed = ref(true);
+function onScroll() {
+  // 检查页面滚动位置
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > 0) {
+    isFixed.value = false;
+  } else {
+    isFixed.value = true;
+  }
+}
+onMounted(() => {
+  window.addEventListener('scroll', onScroll);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', onScroll);
+});
+
 const activeIndex = ref('1');
 const handleSelect = (key, keyPath) => {
   console.log(key, keyPath)
@@ -9,8 +27,14 @@ const handleSelect = (key, keyPath) => {
     case "0":
       router.push('/');
       break;
+    case "1-1-4":
+      router.push('/aucet');
+      break;
     case "2-1":
       router.push('/start/building');
+      break;
+    case "2-4":
+      router.push('/aucet');
       break;
     case "3-1":
       router.push('/wallet');
@@ -23,7 +47,8 @@ const handleSelect = (key, keyPath) => {
 const smMenu = ref(null)
 </script>
 <template>
-  <div class="header" :class="[$route.fullPath === '/' ? 'bg-transparent' : 'bg-gradient-to-r from-primary to-primaryG']">
+  <div class="header"
+    :class="[$route.fullPath === '/' && isFixed ? 'bg-transparent' : 'bg-gradient-to-r from-primary to-primaryG']">
     <el-menu :popper-offset="10" class="menuContent" :default-active="activeIndex" mode="horizontal" :ellipsis="false"
       background-color="transparent" @select="handleSelect">
       <!--      logo-->
@@ -42,7 +67,7 @@ const smMenu = ref(null)
         <el-sub-menu index="1-1" popper-class="Developers-item">
           <template #title>
             <div class="leading-4 max-w-[189px] whitespace-pre-wrap">
-              <p>ORIS Smart Chain</p>
+              <p>ORis Smart Chain</p>
               <p class="text-[#B4B4B4] text-[10px] mt-2.5">Build Web3 dApps effortlessly</p>
             </div>
           </template>
@@ -51,12 +76,12 @@ const smMenu = ref(null)
               <div class="flex items-center justify-between">
                 <div class="flex items-center">
                   <div class="mr-2.5"><img src="@/assets/web/logo.png" class="w-6 h-6" /></div>
-                  <p>ORIS Smart Chain</p>
+                  <p>ORis Smart Chain</p>
                 </div>
                 <img src="@/assets/web/jiantou_blue.png" class="w-3.33 h-2 ml-12">
               </div>
               <div class="ml-9 mt-4">
-                <el-link :underline="false" type="primary">
+                <el-link :underline="false" type="primary" href="/learnMore">
                   <span class="font-normal text-xs">Learn More</span>
                 </el-link>
               </div>
@@ -85,7 +110,7 @@ const smMenu = ref(null)
                 </div>
               </div>
               <div class="ml-7 mt-2.5">
-                <p class="text-[#B4B4B4] text-[10px]">Explore ORIS tech repositories</p>
+                <p class="text-[#B4B4B4] text-[10px]">Explore ORis tech repositories</p>
               </div>
             </div>
           </el-menu-item>
@@ -99,7 +124,7 @@ const smMenu = ref(null)
                 </div>
               </div>
               <div class="ml-7 mt-2.5">
-                <p class="text-[#B4B4B4] text-[10px]">Pilot tokens on ORIS Smart Chain</p>
+                <p class="text-[#B4B4B4] text-[10px]">Pilot tokens on ORis Smart Chain</p>
               </div>
             </div>
           </el-menu-item>
@@ -119,7 +144,7 @@ const smMenu = ref(null)
           </el-menu-item>
           <el-menu-item index="1-1-6">
             <div class="flex items-center">
-              <p class="text-white text-[10px] ml-10">Add ORIS Smart Chain Network</p>
+              <p class="text-white text-[10px] ml-10">Add ORis Smart Chain Network</p>
               <div class="ml-[15px]"><img src="@/assets/web/logo_metamask.png" class="w-[18px] h-[18px] text-white" />
               </div>
             </div>
@@ -128,8 +153,8 @@ const smMenu = ref(null)
         <el-sub-menu index="1-2" popper-class="Developers-item">
           <template #title>
             <div class="leading-4 max-w-[189px] whitespace-pre-wrap">
-              <p>ORIS Beacon Chain</p>
-              <p class="text-[#B4B4B4] text-[10px] mt-2.5">ORIS Chain ecosystem’s staking & governance layer</p>
+              <p>ORis Beacon Chain</p>
+              <p class="text-[#B4B4B4] text-[10px] mt-2.5">ORis Chain ecosystem’s staking & governance layer</p>
             </div>
           </template>
           <!-- <el-menu-item index="1-2-1">
@@ -145,7 +170,7 @@ const smMenu = ref(null)
           <div class="flex flex-col w-full mx-2.5">
             <div class="flex items-center justify-between">
               <div class="flex flex-col justify-start">
-                <p>ORIS Smart Chain</p>
+                <p>ORis Smart Chain</p>
                 <p class="text-[#B4B4B4] text-[9px] mt-[13px]">Build Web3 dApps effortlessly</p>
                 <a href="#" class="text-xs font-light text-[#1058DE] mt-4">Start building</a>
               </div>
@@ -175,7 +200,7 @@ const smMenu = ref(null)
               </div>
             </div>
             <div class="ml-7 mt-2.5">
-              <p class="text-[#B4B4B4] text-[10px]">Explore ORIS tech repositories</p>
+              <p class="text-[#B4B4B4] text-[10px]">Explore ORis tech repositories</p>
             </div>
           </div>
         </el-menu-item>
@@ -189,7 +214,7 @@ const smMenu = ref(null)
               </div>
             </div>
             <div class="ml-7 mt-2.5">
-              <p class="text-[#B4B4B4] text-[10px]">Pilot tokens on ORIS Smart Chain</p>
+              <p class="text-[#B4B4B4] text-[10px]">Pilot tokens on ORis Smart Chain</p>
             </div>
           </div>
         </el-menu-item>
@@ -317,6 +342,10 @@ const smMenu = ref(null)
 }
 
 .el-menu--horizontal {
+  .el-menu-item.is-active {
+    border-bottom: none;
+  }
+
   .el-sub-menu {
     .el-sub-menu__title:hover {
       background-color: transparent;

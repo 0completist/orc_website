@@ -1,14 +1,14 @@
 <template>
     <div class="container my-3 mx-auto">
 
-        <div class="oris flex justify-between my-32">
+        <div class="oris flex items-center justify-between my-32">
             <div class="content">
                 <h1 class="text-4xl mb-5 mt-5">
-                    ORIS Chain
+                    ORis Chain
                     <p class="text-[#1058DE] mt-1.5">Community Hub</p>
                 </h1>
-                <p class="text-lg text-[#3E3E3E] max-w-[500px]">
-                    The ORIS Chain Community is a hub for developers, validators, token HODLers and Web3 enthusiasts.
+                <p class="text-lg text-[#3E3E3E] max-w-[500px] space-margin">
+                    The ORis Chain Community is a hub for developers, validators, token HODLers and Web3 enthusiasts.
                     Welcome to join our vibrant community today.
                 </p>
             </div>
@@ -49,7 +49,7 @@
 
         <div class="events flex px-10 py-14">
             <div class="my-auto max-w-[420px]">
-                <h1 class="text-2xl mb-5">ORIS Chain <span class="text-[#1058DE]">Events</span></h1>
+                <h1 class="text-2xl mb-5">ORis Chain <span class="text-[#1058DE]">Events</span></h1>
                 <p class="text-sm text-[#777]">
                     Find and participate in a BNB Chain conference,
                     hackathon, or meetup.
@@ -59,7 +59,7 @@
 
         <div>
             <div class="text-center mt-8">
-                <h1 class="text-4xl max-size">What's <span class="text-[#1058DE]">NEW</span> at ORIS Chain</h1>
+                <h1 class="text-4xl max-size">What's <span class="text-[#1058DE]">NEW</span> at ORis Chain</h1>
             </div>
             <div class="row-box my-14">
                 <el-row :gutter="24">
@@ -67,7 +67,7 @@
                         <div class="newItem">
                             <div class="img"></div>
                             <p class="text-xl text-[#010105]">
-                                How ORIS Chain Pioneered the
+                                How ORis Chain Pioneered the
                                 Future of Web3 In 2023
                             </p>
                             <p class="line"></p>

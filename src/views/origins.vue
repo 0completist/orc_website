@@ -3,7 +3,7 @@
         <div class="container mx-auto">
 
             <div class="flex my-20 flex-row event">
-                <el-space direction="vertical" alignment="start" class="mt-5 left">
+                <el-space direction="vertical" alignment="start" class="mt-5 left space-margin">
                     <p class="text-lg text-[#777]">WHAT IS Origins?</p>
                     <h1 class="my-5 text-[32px] text-[#1058DE]">The foundation for our digital future</h1>
                     <p class="text-lg text-[#3e3e3e]">
@@ -16,7 +16,7 @@
                 <img class="big_img" src="@/assets/ios/origins@3x.png" alt="" width="100%">
             </div>
 
-            <div class="summary">
+            <div class="summary space-margin">
                 <h1>Summary</h1>
                 <p>
                     Origins is a network of computers all over the world that follow a set of rules called the Origins
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="mt-[52px]">
+            <div class="space-margin mt-[52px]">
                 <h1 class="s-41 mb-[52px] max-size">Why would I use Origins?</h1>
                 <div class="s-16">
                     <p class="mb-5">

@@ -10,7 +10,7 @@
                 </el-col>
                 <el-col :xs="24" :sm="16" :md="16" :lg="16" :xl="16">
                     <div class="center">
-                        <h1>ORIS Chain Tech Roadmap 2022</h1>
+                        <h1>ORis Chain Tech Roadmap 2022</h1>
                         <span class="s-16-7 block mt-10 mb-[110px]">2022.5.31 • 5 min read</span>
                         <div></div>
                         <p>

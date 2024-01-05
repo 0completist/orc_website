@@ -9,6 +9,11 @@ import router from './router'
 import ElementPlus from 'element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 
+// 路由切换时，回到顶部
+router.afterEach((to, from, next) => {
+    window.scrollTo(0, 0);
+});
+
 const app = createApp(App)
 
 /* 全局注册ElementPlus，统一样式尺寸 */

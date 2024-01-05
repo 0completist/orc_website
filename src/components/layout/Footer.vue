@@ -1,7 +1,7 @@
 <template>
     <div class="footer-container text-white">
         <el-row class="justify-center">
-            <el-col :xs="24" :sm="8" :md="8" :lg="6" :xl="6">
+            <el-col :span="8">
                 <div class="footer-column">
                     <div>
                         <h3 class="title">Build</h3>
@@ -9,18 +9,18 @@
                     </div>
                 </div>
             </el-col>
-            <el-col :xs="24" :sm="8" :md="8" :lg="6" :xl="6">
+            <el-col :span="8">
                 <div class="footer-column">
                     <div>
                         <h3 class="title">About</h3>
-                        <p class="mb-8" @click="$router.push('/privacy/policy')">Privacy Policy</p>
-                        <p class="mb-8" @click="$router.push('/terms/use')">Terms of Use</p>
+                        <p class="mb-8 hover:text-primary cursor-pointer" @click="$router.push('/privacy/policy')">Privacy Policy</p>
+                        <p class="mb-8 hover:text-primary cursor-pointer" @click="$router.push('/terms/use')">Terms of Use</p>
                         <p class="mb-8">Careers</p>
                         <p class="mb-8">Verification</p>
                     </div>
                 </div>
             </el-col>
-            <el-col :xs="24" :sm="8" :md="8" :lg="6" :xl="6">
+            <el-col :span="8">
                 <div class="footer-column">
                     <div>
                         <h3 class="title">Community</h3>
@@ -50,7 +50,7 @@
 <style lang="scss" scoped>
 .footer-container {
     padding-top: 64px;
-	padding-bottom: 170px;
+    padding-bottom: 170px;
     background-color: #000;
 }
 

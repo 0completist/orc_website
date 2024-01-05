@@ -114,7 +114,7 @@ export default {
 </script>
 
 <template>
-  <div class="main">
+  <div class="main mt-[auto]">
     <!-- banner -->
     <div class="banner-box flex justify-between flex-col">
       <div class="banner-content container mx-auto mt-[128px]">
@@ -125,9 +125,10 @@ export default {
           scaling solutions.</p>
         <div class="btn text-primary text-lg">Get Start</div>
       </div>
-      <div class="clear-both text-center text-white sm:mb-3.5 xs:mb-1.5">Boasting over 200
+      <div class="tips container mx-auto clear-both text-center text-white">
+        Boasting over 200
         million accounts and 6.8 billion
-        transactions, ORIS is the world's fastest-growing public
+        transactions, ORis is the world's fastest-growing public
         chain.
       </div>
     </div>
@@ -151,7 +152,7 @@ export default {
         src="@/assets/ios/6c710f52a755a702d525b653cc6d2445d371f8702585a-1A40Nd_fw1200@3x.png" alt="">
       <img class="right-img hidden-md-and-down"
         src="@/assets/ios/95fd67f0a660d8fe25d4ce72d8620cdfc40e378a3a6b-PsMWyo_fw1200@3x.png" alt="">
-      <div class="container mx-auto">
+      <div class="container mx-auto mt-[17px]">
         <div class="fold-box flex justify-center">
           <div v-for="(item, index) in coreList" :key="item">
             <div class="foldItem flex" v-if="index != 2">
@@ -206,8 +207,9 @@ export default {
   .banner-box {
     overflow: hidden;
     height: 645px;
-    background: url("@/assets/web/banner.png") no-repeat center center;
+    background: url("@/assets/ios/banner.png") no-repeat;
     background-size: cover;
+    background-position: center center;
 
     .btn {
       margin-top: 33px;
@@ -217,6 +219,10 @@ export default {
       text-align: center;
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 1);
+    }
+    .tips{
+      padding: 18px 0;
+      background-color: rgba(255, 255, 255, 0.11);
     }
   }
 
@@ -297,6 +303,7 @@ export default {
 
 @media (max-width: 768px) {
   .banner-box {
+    background-position: 60% center !important;
     .banner-content {
       padding-left: 20px;
     }

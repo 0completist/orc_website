@@ -2,8 +2,8 @@
     <div class="container my-3 mx-auto">
 
         <div class="oris flex justify-between my-32">
-            <div class="content">
-                <h1 class="text-4xl mb-5 max-size">ORIS Chain <span class="text-[#1058DE]">Developers</span></h1>
+            <div class="content space-margin mt-5">
+                <h1 class="text-4xl mb-5 max-size">ORis Chain <span class="text-[#1058DE]">Developers</span></h1>
                 <p class="text-xl text-[#3E3E3E] max-w-[570px]">Build cutting-edge Web3 applications on the Blockchain with
                     the largest
                     user base.</p>
@@ -16,8 +16,8 @@
         </div>
 
         <div>
-            <div class="text-center">
-                <h1 class="text-4xl mb-4">Developer <span class="text-[#1058DE]">Resources</span></h1>
+            <div class="text-center space-margin">
+                <h1 class="text-4xl mb-4 max-size">Developer <span class="text-[#1058DE]">Resources</span></h1>
                 <p class="text-xl text-[#3E3E3E]">A compilation of essential learning materials and discussion forums
                     for<br />
                     developers joining the BNB Chain community.</p>
@@ -67,7 +67,7 @@
         <div class="events flex px-10 py-14" @click="$router.push('/event')">
             <div class="my-auto max-w-[420px]">
                 <h1 class="text-2xl mb-5">Developer <span class="text-[#1058DE]">Events</span></h1>
-                <p class="text-sm text-[#777]">ORIS Chain is hosting events with community partners globally
+                <p class="text-sm text-[#777]">ORis Chain is hosting events with community partners globally
                     in the form of meetups, conferences, hackathons, and more.</p>
             </div>
         </div>
@@ -121,29 +121,29 @@ export default {
                 {
                     icon: "/src/assets/ios/wj_b.png",
                     title: "Documentation",
-                    content: "Access readily available resources on ORIS Smart Chain, BNB Beacon Chain and more."
+                    content: "Access readily available resources on ORis Smart Chain, BNB Beacon Chain and more."
                 },
                 {
                     icon: "/src/assets/ios/github-fill.png",
                     title: "GitHub",
-                    content: "Explore, collaborate and contribute to our tech repositories with other developers on ORIS Chain."
+                    content: "Explore, collaborate and contribute to our tech repositories with other developers on ORis Chain."
                 },
                 {
                     icon: "/src/assets/ios/ditu.png",
                     title: "Roadmap",
-                    content: "Find out more about where ORIS Chain is headed and how your project can grow with it.",
+                    content: "Find out more about where ORis Chain is headed and how your project can grow with it.",
                     link: "/map"
                 },
                 {
                     icon: "/src/assets/ios/xianlu@2x.png",
                     title: "Developer Path",
-                    content: "Master ORIS Chain development with our engaging, step-by-step visual guide – fast-track your blockchain journey today.",
+                    content: "Master ORis Chain development with our engaging, step-by-step visual guide – fast-track your blockchain journey today.",
                     link: "/path"
                 },
                 {
                     icon: "/src/assets/ios/keaide@2x.png",
                     title: "Support",
-                    content: "Get support from the ORIS Chain team and community."
+                    content: "Get support from the ORis Chain team and community."
                 }
             ],
             act: '01',
@@ -168,7 +168,7 @@ export default {
                     icon: "/src/assets/web/shuilongtou@2x.png",
                     title: "Faucet",
                     list: [
-                        { name: 'ORIS Testnet Faucet', link: '/aucet' }
+                        { name: 'ORis Testnet Faucet', link: '/aucet' }
                     ]
                 },
                 {

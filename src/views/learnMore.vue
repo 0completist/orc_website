@@ -2,12 +2,12 @@
     <div class="container mx-auto">
 
         <div class="flex my-20 flex-row items-center event">
-            <el-space direction="vertical" alignment="start" class="mt-5 left">
+            <el-space direction="vertical" alignment="start" class="mt-5 left space-margin">
                 <div class="live text-sm text-[#4b4b4b]">
                     <span></span>
                     MAINNET IS LIVE
                 </div>
-                <h1 class="my-5 text-4xl text-primary">ORIS SMART CHAIN</h1>
+                <h1 class="my-5 text-4xl text-primary max-size">ORis SMART CHAIN</h1>
                 <p class="text-lg text-[#3e3e3e]">
                     Harnessing Decentralization to
                     Make the Impossible Possible
@@ -42,8 +42,8 @@
         </div>
 
         <div class="mt-[85px] mb-[96px] text-[#3e3e3e]">
-            <h1 class="text-[41px] mb-[122px] max-size">
-                What Makes ORIS Smart<br />
+            <h1 class="text-[41px] mb-[122px] space-margin max-size">
+                What Makes ORis Smart<br />
                 Chain So <span class="text-primary">Powerful?</span>
             </h1>
             <div class="row-box makeList">
@@ -69,7 +69,7 @@
             <div class="text-center text-[#3E3E3E]">
                 <h1 class="text-[41px] mb-7 max-size">TDeveloper <span class="text-primary">Resources</span></h1>
                 <p class="text-xl">
-                    Start building on ORIS Smart Chain today.
+                    Start building on ORis Smart Chain today.
                 </p>
             </div>
             <el-row :gutter="24" class="mt-[56px]">
@@ -100,21 +100,21 @@ let typeList = [
     {
         icon: "/src/assets/ios/wj_b.png",
         title: "Documentation",
-        content: "Your guide to ORIS Smart Chain"
+        content: "Your guide to ORis Smart Chain"
     },
     {
         icon: "/src/assets/ios/github-fill.png",
         title: "GitHub",
-        content: "Explore the ORIS tech repository"
+        content: "Explore the ORis tech repository"
     },
     {
         icon: "/src/assets/ios/shuilongtou@2x.png",
         title: "Faucet",
-        content: "Pilot tokens on ORIS Smart Chain"
+        content: "Pilot tokens on ORis Smart Chain"
     },
     {
         icon: "/src/assets/ios/skan @2x.png",
-        title: "ORIS-Scan",
+        title: "ORis-Scan",
         content: "A block explorer and analytics platform"
     }
 ];
@@ -162,16 +162,16 @@ let makeList = [
 
 let faqList = [
     {
-        title: "What are the main features of ORIS?",
-        content: 'ORIS Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
+        title: "What are the main features of ORis?",
+        content: 'ORis Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
     },
     {
-        title: "What are the main features of ORIS?",
-        content: 'ORIS Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
+        title: "What are the main features of ORis?",
+        content: 'ORis Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
     },
     {
-        title: "What are the main features of ORIS?",
-        content: 'ORIS Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
+        title: "What are the main features of ORis?",
+        content: 'ORis Smart Chain relies on a system of 55 validators with Proof of Staked Authority (PoSA) consensus that can support short block time and lower fees. The most bonded validator candidates of staking will become validators and produce blocks. The double-sign detection, malicious vote detection and other slashing logic guarantee security, stability, and chain finality. Other than the 32 active validators, BSC will introduce more validators, e.g. another 23 inactive validators, into the validator set as backups, which will be called "Candidates".'
     }
 ]
 

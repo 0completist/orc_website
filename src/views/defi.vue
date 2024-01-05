@@ -2,7 +2,7 @@
     <div class="container mx-auto">
 
         <div class="flex my-20 flex-row event">
-            <el-space direction="vertical" alignment="start" class="mt-5 left">
+            <el-space direction="vertical" alignment="start" class="mt-5 left space-margin">
                 <img class="hidden-md-and-down" width="95px" src="@/assets/ios/nft@2x.png" alt="" />
                 <h1 class="my-5 text-[32px] text-[#1058DE]">Decentralized finance (DeFi)</h1>
                 <p class="text-lg text-[#3e3e3e]">
@@ -15,7 +15,7 @@
         </div>
 
         <div>
-            <h1 class="text-[41px] text-[#3e3e3e]">On this page</h1>
+            <h1 class="text-[41px] text-[#3e3e3e] space-margin">On this page</h1>
             <div class="tips">
                 DeFi is an open and global financial system built for the internet age – an alternative to a system that's
                 opaque, tightly controlled, and held together by decades-old infrastructure and processes. It gives you
