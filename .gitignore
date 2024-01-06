@@ -1,0 +1,6 @@
+node_modules
+dist
+dist.zip
+.DS_Store
+auto-import.d.ts
+package-lock.json
