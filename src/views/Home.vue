@@ -68,46 +68,37 @@ export default {
       bottom: false,
       coreList: [
         {
-          icon: "src/assets/logo/Anoma.png",
+          icon: new URL("@/assets/logo/Anoma.png", import.meta.url).href,
           title: "Anoma Network",
           synopsis: "Anoma 是一个以意图为中心的隐私架构，引入了构建基础设施层的新范例和用于去中心化应用程序的新操作系统。Anoma 的以意图为中心引入了新颖的原语，允许现有的 web2.5 dApp 完全去中心化，例如 optimistic 和 ZK rollups、DEX、NFT 市场或 Gitcoin 等公共产品融资应用程序。"
         },
         {
-          icon: "/src/assets/logo/Fundamental-Labs.png",
+          icon: new URL("@/assets/logo/Fundamental-Labs.png", import.meta.url).href,
           title: "Fundamental Labs",
           synopsis: "Fundamental Labs 致力于支持最有前途的企业家加速基础创新、大规模采用区块链技术并为更美好的数字社会创造价值。Fundamental Labs 的投资涵盖了许多领域，如第 1/2 层协议、Web 3.0、加密金融基础设施、DeFi、NFT 等。该公司致力于与其投资组合团队始终如一地合作，以取得巨大的成功。该公司的投资组合包括 60 多个项目，如 Coinbase、Cannan、Polkadot、Vechain、Binance Coin、Blockstack、Avalanche、Near、PlatON、Mask 等。"
         },
         {
-          icon: "/src/assets/logo/Shima-Capital.png",
+          icon: new URL("@/assets/logo/Shima-Capital.png", import.meta.url).href,
           title: "Opera",
           synopsis: ""
         },
         {
-          icon: "/src/assets/logo/Cota-Capital.png",
+          icon: new URL("@/assets/logo/Cota-Capital.png", import.meta.url).href,
           title: "Cota Capital",
           synopsis: "Shima Capital 是一家专注于支持前沿区块链初创公司的投资基金。Shima Capital的单笔投资通常在 50 万至 200 万美元之间。"
         },
         {
-          icon: "/src/assets/logo/Signum-Capital.png",
+          icon: new URL("@/assets/logo/Signum-Capital.png", import.meta.url).href,
           title: "Signum Capital",
           synopsis: "Signum Capital 是一家总部位于新加坡的公司，专门为支持区块链的公司提供咨询服务。"
         },
         {
-          icon: "/src/assets/logo/Robot-Ventures.png",
+          icon: new URL("@/assets/logo/Robot-Ventures.png", import.meta.url).href,
           title: "Robot Ventures",
           synopsis: "Robot Ventures 是具有远大抱负和逆势世界观的金融科技/加密公司的种子（前）投资者。 Robot Ventures 以行业定义的经济设计和无与伦比的经验为创始人提供支持。"
         }
       ],
       current: 3
-    }
-  },
-  methods: {
-    changeItem(index) {
-      if (index == this.current) {
-        this.current = null
-      } else {
-        this.current = index
-      }
     }
   }
 }
@@ -165,7 +156,7 @@ export default {
                   {{ item.synopsis }}
                 </p>
               </div>
-              <div class="foldItem-header" @click="changeItem(index)">
+              <div class="foldItem-header" @click="current=index">
                 <img :src="item.icon" alt="" class="mt-10 mb-5 mx-auto" width="38px">
                 <h6 class="mt-10 text-[11px] rotate-90	">{{ item.title }}</h6>
               </div>
@@ -220,7 +211,8 @@ export default {
       border-radius: 10px;
       background-color: rgba(255, 255, 255, 1);
     }
-    .tips{
+
+    .tips {
       padding: 18px 0;
       background-color: rgba(255, 255, 255, 0.11);
     }
@@ -304,6 +296,7 @@ export default {
 @media (max-width: 768px) {
   .banner-box {
     background-position: 60% center !important;
+
     .banner-content {
       padding-left: 20px;
     }
