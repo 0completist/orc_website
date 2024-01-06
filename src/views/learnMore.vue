@@ -50,16 +50,16 @@
                 <el-row :gutter="24">
                     <el-col :xs="24" :sm="12" :md="12" :lg="12" :xl="12" class="mb-[50px]" v-for="(item, index) in makeList"
                         :key="index">
-                          <div class="makeItem flex items-center">
+                        <div class="makeItem flex items-center">
                             <div class="h-36 w-5 border border-r-0 rounded border-[#DDDDDD] border-solid mr-20"></div>
                             <div>
-                              <div class="icon mb-10 flex items-center justify-center">
-                                <img :src="item.icon" width="30px" />
-                              </div>
-                              <h1 class="text-[25px] mb-5">{{ item.title }}</h1>
-                              <p class="text-[15px] text-[#777]">{{ item.content }}</p>
+                                <div class="icon mb-10 flex items-center justify-center">
+                                    <img :src="item.icon" width="30px" />
+                                </div>
+                                <h1 class="text-[25px] mb-5">{{ item.title }}</h1>
+                                <p class="text-[15px] text-[#777]">{{ item.content }}</p>
                             </div>
-                          </div>
+                        </div>
                     </el-col>
                 </el-row>
             </div>
@@ -98,22 +98,22 @@ import Collapse from '@/components/collapse.vue';
 let curr = ref(0)
 let typeList = [
     {
-        icon: "/src/assets/ios/wj_b.png",
+        icon: new URL("@/assets/ios/wj_b.png", import.meta.url).href,
         title: "Documentation",
         content: "Your guide to ORis Smart Chain"
     },
     {
-        icon: "/src/assets/ios/github-fill.png",
+        icon: new URL("@/assets/ios/github-fill.png", import.meta.url).href,
         title: "GitHub",
         content: "Explore the ORis tech repository"
     },
     {
-        icon: "/src/assets/ios/shuilongtou@2x.png",
+        icon: new URL("@/assets/ios/shuilongtou@2x.png", import.meta.url).href,
         title: "Faucet",
         content: "Pilot tokens on ORis Smart Chain"
     },
     {
-        icon: "/src/assets/ios/skan @2x.png",
+        icon: new URL("@/assets/ios/skan @2x.png", import.meta.url).href,
         title: "ORis-Scan",
         content: "A block explorer and analytics platform"
     }
@@ -121,17 +121,17 @@ let typeList = [
 
 let list = [
     {
-        icon: "/src/assets/ios/game@2x.png",
+        icon: new URL("@/assets/ios/game@2x.png", import.meta.url).href,
         title: "1M",
         content: "Daily Active Users"
     },
     {
-        icon: "/src/assets/ios/CAIDAN@2x.png",
+        icon: new URL("@/assets/ios/CAIDAN@2x.png", import.meta.url).href,
         title: "2000",
         content: "Active dApps"
     },
     {
-        icon: "/src/assets/ios/game@2x.png",
+        icon: new URL("@/assets/ios/game@2x.png", import.meta.url).href,
         title: "287K",
         content: "Weekly Active Gamers"
     }
@@ -139,22 +139,22 @@ let list = [
 
 let makeList = [
     {
-        icon: "/src/assets/ios/xingzhuang.png",
+        icon: new URL("@/assets/ios/xingzhuang.png", import.meta.url).href,
         title: "Developer Friendly",
         content: "EVM-compatible Layer 1 with compatible tooling for up to 35x capacity."
     },
     {
-        icon: "/src/assets/ios/tiaojie.png",
+        icon: new URL("@/assets/ios/tiaojie.png", import.meta.url).href,
         title: "High Performance",
         content: "Supports popular programming languages: Solidity, GO, Java, Swift; with a short block time and high block gas limit."
     },
     {
-        icon: "/src/assets/ios/xingzhuang.png",
+        icon: new URL("@/assets/ios/xingzhuang.png", import.meta.url).href,
         title: "Community-led",
         content: "More validator sets with BEP-13, enabling a more stable and decentralized validator network."
     },
     {
-        icon: "/src/assets/ios/wancheng.png",
+        icon: new URL("@/assets/ios/wancheng.png", import.meta.url).href,
         title: "Reliable",
         content: "Temporary validators with BEP-127, allowing high capacity and less congestion."
     }

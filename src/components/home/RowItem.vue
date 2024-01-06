@@ -4,7 +4,8 @@
         <div class="content md:px-5 space-margin">
             <h3 class="text-[26px] mb-8">{{ item.title }}</h3>
             <p class="text-lg">{{ item.content }}</p>
-            <el-button type="primary" size="large" class="mt-[22px]" @click="$router.push(item.url)">{{ item.text }}</el-button>
+            <el-button type="primary" size="large" class="mt-[22px]" @click="$router.push(item.url)">{{ item.text
+            }}</el-button>
         </div>
     </div>
 </template>
@@ -25,9 +26,9 @@ export default {
     data() {
         return {
             imgList: [
-                "src/assets/ios/origins@3x.png",
-                "src/assets/ios/defi@3x.png",
-                "src/assets/ios/99@3x.png"
+                new URL("@/assets/ios/origins@3x.png", import.meta.url).href,
+                new URL("@/assets/ios/defi@3x.png", import.meta.url).href,
+                new URL("@/assets/ios/99@3x.png", import.meta.url).href
             ]
         }
     }

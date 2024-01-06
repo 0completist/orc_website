@@ -95,32 +95,32 @@ export default {
             curr: 0,
             typeList: [
                 {
-                    icon: "/src/assets/ios/tuite@3x.png",
-                    selIcon: "/src/assets/ios/tuite_b.png",
+                    icon: new URL("@/assets/ios/tuite@3x.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/ios/tuite_b.png", import.meta.url).href,
                     title: "Twitter",
                     content: "Announcements"
                 },
                 {
-                    icon: "/src/assets/web/telegram.png",
-                    selIcon: "/src/assets/web/telegram_b.png",
+                    icon: new URL("@/assets/web/telegram.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/telegram_b.png", import.meta.url).href,
                     title: "Telegram",
                     content: "Announcements"
                 },
                 {
-                    icon: "/src/assets/web/youtube.png",
-                    selIcon: "/src/assets/web/youtube_b.png",
+                    icon: new URL("@/assets/web/youtube.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/youtube_b.png", import.meta.url).href,
                     title: "YouTube",
                     content: "Announcements"
                 },
                 {
-                    icon: "/src/assets/ios/discord@2x.png",
-                    selIcon: "/src/assets/ios/discord_b.png",
+                    icon: new URL("@/assets/ios/discord@2x.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/ios/discord_b.png", import.meta.url).href,
                     title: "Discord",
                     content: "Engineering"
                 },
                 {
-                    icon: "/src/assets/ios/github-fill.png",
-                    selIcon: "/src/assets/ios/github-fill.png",
+                    icon: new URL("@/assets/ios/github-fill.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/ios/github-fill.png", import.meta.url).href,
                     title: "GitHub",
                     content: "Engineering"
                 }
@@ -157,7 +157,7 @@ export default {
 }
 
 .events {
-    background: url("/src/assets/ios/event@3x.png") no-repeat center center;
+    background: url("@/assets/ios/event@3x.png") no-repeat center center;
     background-size: cover;
 }
 

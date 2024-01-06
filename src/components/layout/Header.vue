@@ -221,27 +221,21 @@ const smMenu = ref(null)
       </el-sub-menu>
       <el-sub-menu class="hidden-sm-and-down" index="3" popper-class="Developers">
         <template #title>Ecosystemrtners</template>
-        <el-menu-item index="3-1">wallet</el-menu-item>
-        <!-- <el-menu-item index="3-2">item two</el-menu-item>
-        <el-menu-item index="3-3">item three</el-menu-item>
-        <el-sub-menu index="3-4" popper-class="Developers-item">
-          <template #title>item four</template>
-          <el-menu-item index="3-4-1">item one</el-menu-item>
-          <el-menu-item index="3-4-2">item two</el-menu-item>
-          <el-menu-item index="3-4-3">item three</el-menu-item>
-        </el-sub-menu> -->
+        <el-menu-item index="3-1">
+          <div class="flex flex-col w-full mx-2.5">
+            <div class="flex items-center">
+              <div class="flex items-center">
+                <div class="mr-2.5"><img src="@/assets/ios/wallet@3x.png" class="w-[18px] h-[18px] text-white" />
+                </div>
+                <p>wallet</p>
+              </div>
+            </div>
+          </div>
+        </el-menu-item>
       </el-sub-menu>
       <el-sub-menu class="hidden-sm-and-down" index="4" popper-class="Developers">
         <template #title>Community</template>
         <el-menu-item index="4-1">join</el-menu-item>
-        <!-- <el-menu-item index="4-2">item two</el-menu-item>
-        <el-menu-item index="4-3">item three</el-menu-item>
-        <el-sub-menu index="4-4" popper-class="Developers-item">
-          <template #title>item four</template>
-          <el-menu-item index="4-4-1">item one</el-menu-item>
-          <el-menu-item index="4-4-2">item two</el-menu-item>
-          <el-menu-item index="4-4-3">item three</el-menu-item>
-        </el-sub-menu> -->
       </el-sub-menu>
       <div class="cursor-pointer hidden-md-and-up text-white mr-2 flex items-center" @click="smMenu.handleOPen">
         <el-icon size="30">

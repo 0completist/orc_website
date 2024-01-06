@@ -8,8 +8,8 @@
                         <span class="s-16">{{ item.title }}</span>
                     </div>
                     <div class="pr-2.5">
-                        <img v-if="current === index" src="/src/assets/ios/close.png" alt="" width="10px">
-                        <img v-else src="/src/assets/ios/open.png" alt="" width="10px">
+                        <img v-if="current === index" src="@/assets/ios/close.png" alt="" width="10px">
+                        <img v-else src="@/assets/ios/open.png" alt="" width="10px">
                     </div>
                 </template>
                 <div class="s-12-7 px-10">

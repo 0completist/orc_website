@@ -119,29 +119,29 @@ export default {
             curr: 0,
             typeList: [
                 {
-                    icon: "/src/assets/ios/wj_b.png",
+                    icon: new URL("@/assets/ios/wj_b.png", import.meta.url).href,
                     title: "Documentation",
                     content: "Access readily available resources on ORis Smart Chain, BNB Beacon Chain and more."
                 },
                 {
-                    icon: "/src/assets/ios/github-fill.png",
+                    icon: new URL("@/assets/ios/github-fill.png", import.meta.url).href,
                     title: "GitHub",
                     content: "Explore, collaborate and contribute to our tech repositories with other developers on ORis Chain."
                 },
                 {
-                    icon: "/src/assets/ios/ditu.png",
+                    icon: new URL("@/assets/ios/ditu.png", import.meta.url).href,
                     title: "Roadmap",
                     content: "Find out more about where ORis Chain is headed and how your project can grow with it.",
                     link: "/map"
                 },
                 {
-                    icon: "/src/assets/ios/xianlu@2x.png",
+                    icon: new URL("@/assets/ios/xianlu@2x.png", import.meta.url).href,
                     title: "Developer Path",
                     content: "Master ORis Chain development with our engaging, step-by-step visual guide – fast-track your blockchain journey today.",
                     link: "/path"
                 },
                 {
-                    icon: "/src/assets/ios/keaide@2x.png",
+                    icon: new URL("@/assets/ios/keaide@2x.png", import.meta.url).href,
                     title: "Support",
                     content: "Get support from the ORis Chain team and community."
                 }
@@ -149,7 +149,7 @@ export default {
             act: '01',
             toolList: [
                 {
-                    icon: "/src/assets/web/licai.png",
+                    icon: new URL("@/assets/web/licai.png", import.meta.url).href,
                     title: "Wallet",
                     list: [
                         { name: 'Trust Wallet' },
@@ -157,7 +157,7 @@ export default {
                     ]
                 },
                 {
-                    icon: "/src/assets/web/sousuo.png",
+                    icon: new URL("@/assets/web/sousuo.png", import.meta.url).href,
                     title: "Explorer",
                     list: [
                         { name: 'OrisScan Mainnet' },
@@ -165,14 +165,14 @@ export default {
                     ]
                 },
                 {
-                    icon: "/src/assets/web/shuilongtou@2x.png",
+                    icon: new URL("@/assets/web/shuilongtou@2x.png", import.meta.url).href,
                     title: "Faucet",
                     list: [
                         { name: 'ORis Testnet Faucet', link: '/aucet' }
                     ]
                 },
                 {
-                    icon: "/src/assets/web/menu-s.png",
+                    icon: new URL("@/assets/web/menu-s.png", import.meta.url).href,
                     title: "IDE",
                     list: [
                         { name: 'Remix' },
@@ -183,23 +183,23 @@ export default {
             curInd: 0,
             communityList: [
                 {
-                    icon: "/src/assets/web/facebook-fill.png",
-                    selIcon: "/src/assets/web/f1.png",
+                    icon: new URL("@/assets/web/facebook-fill.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/f1.png", import.meta.url).href,
                     name: "Facebook"
                 },
                 {
-                    icon: "/src/assets/web/medium.png",
-                    selIcon: "/src/assets/web/f2.png",
+                    icon: new URL("@/assets/web/medium.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/f2.png", import.meta.url).href,
                     name: "Facebook"
                 },
                 {
-                    icon: "/src/assets/web/tuite.png",
-                    selIcon: "/src/assets/web/f3.png",
+                    icon: new URL("@/assets/web/tuite.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/f3.png", import.meta.url).href,
                     name: "Facebook"
                 },
                 {
-                    icon: "/src/assets/web/reddit.png",
-                    selIcon: "/src/assets/web/f4.png",
+                    icon: new URL("@/assets/web/reddit.png", import.meta.url).href,
+                    selIcon: new URL("@/assets/web/f4.png", import.meta.url).href,
                     name: "Facebook"
                 }
             ]
@@ -242,17 +242,17 @@ export default {
 }
 
 .events {
-    background: url("/src/assets/ios/event@3x.png") no-repeat center center;
+    background: url("@/assets/ios/event@3x.png") no-repeat center center;
     background-size: cover;
 }
 
 .bounty {
-    background: url("/src/assets/web/bounty.png") no-repeat center center;
+    background: url("@/assets/web/bounty.png") no-repeat center center;
     background-size: cover;
 }
 
 .github {
-    background: url("/src/assets/web/gothub.png") no-repeat center center;
+    background: url("@/assets/web/gothub.png") no-repeat center center;
     background-size: cover;
 }
 

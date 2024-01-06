@@ -118,32 +118,32 @@
 
 let list = [
     {
-        icon: "/src/assets/ios/yinhang-F@2x.png",
+        icon: new URL("@/assets/ios/yinhang-F@2x.png", import.meta.url).href,
         title: "Banking for everyone",
         content: "Not everyone has access to financial services. But all you need to access Ethereum and the lending, borrowing and savings products built on it is an internet connection."
     },
     {
-        icon: "/src/assets/ios/suspect@2x.png",
+        icon: new URL("@/assets/ios/suspect@2x.png", import.meta.url).href,
         title: "An open internet",
         content: "Anyone can interact with Origins network or build applications on it. This allows you to control your own assets and identity, instead of them being controlled by a few mega-corporations."
     },
     {
-        icon: "/src/assets/ios/haoyou@2x.png",
+        icon: new URL("@/assets/ios/haoyou@2x.png", import.meta.url).href,
         title: "A peer-to-peer network",
         content: "Not everyone has access to financial services. But all you need to access Origins and the lending, borrowing and savings products built on it is an internet connection."
     },
     {
-        icon: "/src/assets/ios/jurassic_safe@2x.png",
+        icon: new URL("@/assets/ios/jurassic_safe@2x.png", import.meta.url).href,
         title: "Censorship-resistant",
         content: "Not everyone has access to financial services. But all you need to access Origins and the lending, borrowing and savings products built on it is an internet connection."
     },
     {
-        icon: "/src/assets/ios/24gf-bag2@2x.png",
+        icon: new URL("@/assets/ios/24gf-bag2@2x.png", import.meta.url).href,
         title: "Commerce guarantees",
         content: "Not everyone has access to financial services. But all you need to access Origins and the lending, borrowing and savings products built on it is an internet connection."
     },
     {
-        icon: "/src/assets/ios/chengxinhezuowoshou@2x.png",
+        icon: new URL("@/assets/ios/chengxinhezuowoshou@2x.png", import.meta.url).href,
         title: "Composable products",
         content: "Not everyone has access to financial services. But all you need to access Origins and the lending, borrowing and savings products built on it is an internet connection."
     }

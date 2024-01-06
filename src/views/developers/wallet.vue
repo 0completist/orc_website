@@ -45,7 +45,7 @@ let current = ref(0);
 
 let list = [
     {
-        icon: "/src/assets/ios/logo_trust-wallet@2x.png",
+        icon: new URL("@/assets/ios/logo_trust-wallet@2x.png", import.meta.url).href,
         title: "Trust Wallet",
         content: "Helping over 25 million crypto users buy, store and sell cryptocurrencies and NFTs with Trust Wallet.",
         isC: true,
@@ -53,7 +53,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_binance-web3-wallet@2x.png",
+        icon: new URL("@/assets/ios/logo_binance-web3-wallet@2x.png", import.meta.url).href,
         title: "Binance Web3 Wallet",
         content: "A wallet within the Binance app, which offers users a secure and streamlined method to manage their assets.",
         isC: false,
@@ -61,7 +61,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_binance-wallet@2x.png",
+        icon: new URL("@/assets/ios/logo_binance-wallet@2x.png", import.meta.url).href,
         title: "BNB Chain Wallet",
         content: "Users can enter the world of DeFi and dApps on a browser extension wallet for BNB Beacon Chain, BNB Smart Chain, and Ethereum.",
         isC: true,
@@ -69,7 +69,7 @@ let list = [
         isR: false
     },
     {
-        icon: "/src/assets/ios/logo_coin98@2x.png",
+        icon: new URL("@/assets/ios/logo_coin98@2x.png", import.meta.url).href,
         title: "Coin98",
         content: "An all-in-one DeFi wallet with 5-star user reviews on Google Chrome. Users can store, exchange, and stake crypto with Coin98.",
         isC: true,
@@ -77,7 +77,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_mathwallet@2x.png",
+        icon: new URL("@/assets/ios/logo_mathwallet@2x.png", import.meta.url).href,
         title: "MathWallet",
         content: "A multi-platform crypto wallet with access to over 100 different chains.",
         isC: true,
@@ -85,7 +85,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_metamask@2x.png",
+        icon: new URL("@/assets/ios/logo_metamask@2x.png", import.meta.url).href,
         title: "MetaMask",
         content: "The most popular software wallet and browser extension trusted by over 30 million cryptocurrency users. Learn how to add BNB Chain to MetaMask.",
         isC: true,
@@ -93,7 +93,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_safepal@2x.png",
+        icon: new URL("@/assets/ios/logo_safepal@2x.png", import.meta.url).href,
         title: "SafePal",
         content: "A secure way of holding, buying, and trading your crypto through a single wallet.",
         isC: true,
@@ -101,7 +101,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/tp@2x.png",
+        icon: new URL("@/assets/ios/tp@2x.png", import.meta.url).href,
         title: "TokenPocket",
         content: "A multi-chain DeFi and cryptocurrency wallet providing trusted crypto asset management services since 2018.",
         isC: true,
@@ -109,7 +109,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/bw@2x.png",
+        icon: new URL("@/assets/ios/bw@2x.png", import.meta.url).href,
         title: "Bitget Wallet",
         content: "Access over 70 chains, 22,000 crypto assets, and over 10,000 dApps using Bitget Wallet.",
         isC: true,
@@ -117,7 +117,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_myetherwallet@2x.png",
+        icon: new URL("@/assets/ios/logo_myetherwallet@2x.png", import.meta.url).href,
         title: "MyEtherWallet",
         content: "MEW is an open-source and free wallet developed for accessing dApps on the blockchain.",
         isC: true,
@@ -125,7 +125,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_onto-wallet@2x.png",
+        icon: new URL("@/assets/ios/logo_onto-wallet@2x.png", import.meta.url).href,
         title: "ONTO Wallet",
         content: "Users can manage their digital assets and NFTs with a single private key using the self-sovereign ONTO Wallet.",
         isC: true,
@@ -133,7 +133,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_ledger@2x.png",
+        icon: new URL("@/assets/ios/logo_ledger@2x.png", import.meta.url).href,
         title: "Ledger",
         content: "Ledger wallet is a hardware wallet, used to store private keys offline, offering the highest protection for crypto assets.",
         isC: true,
@@ -141,7 +141,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_trezor@2x.png",
+        icon: new URL("@/assets/ios/logo_trezor@2x.png", import.meta.url).href,
         title: "Trezor",
         content: "Invented to secure your digital freedom, Trezor is a hardware wallet developed to enable safer crypto storage and trading.",
         isC: true,
@@ -149,7 +149,7 @@ let list = [
         isR: true
     },
     {
-        icon: "/src/assets/ios/logo_torus@2x.png",
+        icon: new URL("@/assets/ios/logo_torus@2x.png", import.meta.url).href,
         title: "Torus",
         content: "Torus is a secure authentication wallet and platform designed to manage your private keys without a password.",
         isC: true,
